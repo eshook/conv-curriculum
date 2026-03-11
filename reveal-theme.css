@@ -87,16 +87,22 @@
 .reveal::after {
   content: "";
   position: fixed;
-  bottom: 20px;    /* Distance from bottom */
-  right: 0px;     /* Distance from right */
-  width: 3300px;  /* Adjust to your logo's width */
-  height: 107px;  /* Adjust to your logo's height */
-  z-index: 10;    /* Ensures it stays on top of slide content */
-  width: auto;
-  pointer-events: none; /* Allows you to click "through" the logo if it covers a link */
-  background-image: url("https://cdn.rawgit.com/eshook/conv-curriculum/refs/heads/main/footer.png"); 
+  bottom: 20px;          /* Distance from bottom */
+  right: 20px;           /* Added a small margin from the right edge */
+  
+  /* Give the element a specific size so the background image can fill it */
+  width: 3300px;
+  height: 100px;         
+  
+  display: block;
+  z-index: 1000;
+  pointer-events: none;
+  
+  /* Updated to jsDelivr for reliability */
+  background-image: url("https://cdn.jsdelivr.net/gh/eshook/conv-curriculum@main/footer.png"); 
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 
