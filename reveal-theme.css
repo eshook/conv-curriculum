@@ -82,3 +82,23 @@
   font-size: 0.6em;
   color: #888;
 }
+
+/* Persistent Footer Logo */
+.footer-logo {
+  position: absolute;
+  bottom: 0px;    /* Distance from bottom */
+  right: 0px;     /* Distance from right */
+  z-index: 10;    /* Ensures it stays on top of slide content */
+  width: auto;
+  pointer-events: none; /* Allows you to click "through" the logo if it covers a link */
+  background-image: url("https://cdn.rawgit.com/eshook/conv-curriculum/refs/heads/main/img/footer.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Hide footer on the Title Slide only */
+.title-slide ~ .footer-logo, 
+.reveal.has-title-slide .footer-logo {
+  /* This logic depends on your specific Reveal.js version, 
+     often it's easier to just use a 'hide-footer' class */
+}
