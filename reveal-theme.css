@@ -27,6 +27,12 @@
   margin-bottom: 30px;
 }
 
+.reveal .slides section {
+  /* 100px for the footer + 40px buffer for breathing room */
+  padding-bottom: 140px !important; 
+  box-sizing: border-box;
+}
+
 .reveal p {
   font-size: 1.2em;
   line-height: 1.45;
