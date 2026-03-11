@@ -87,22 +87,23 @@
 .reveal::after {
   content: "";
   position: fixed;
-  bottom: 20px;          /* Distance from bottom */
-  right: 20px;           /* Added a small margin from the right edge */
+  bottom: 10px;      /* Distance from bottom */
+  left: 5%;          /* Centering it roughly */
+  right: 5%;
   
-  /* Give the element a specific size so the background image can fill it */
-  width: 300px;
-  height: 100px;         
+  /* The Fix: Give it a responsive height and a wide width */
+  height: 40px;      
+  width: 90%;        
   
   display: block;
-  z-index: 9000;
+  z-index: 9999;
   pointer-events: none;
   
-  /* Updated to jsDelivr for reliability */
+  /* Updated Link & Scaling */
   background-image: url("https://cdn.jsdelivr.net/gh/eshook/conv-curriculum@main/footer.png"); 
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: center bottom;
 }
 
 
