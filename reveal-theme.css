@@ -84,14 +84,15 @@
 }
 
 /* Persistent Footer Logo */
+/*
 .reveal::after {
   content: "";
   position: fixed;
-  bottom: 10px;      /* Distance from bottom */
-  left: 5%;          /* Centering it roughly */
+  bottom: 10px;      
+  left: 5%;          
   right: 5%;
   
-  /* The Fix: Give it a responsive height and a wide width */
+
   height: 40px;      
   width: 90%;        
   
@@ -99,11 +100,32 @@
   z-index: 9999;
   pointer-events: none;
   
-  /* Updated Link & Scaling */
+
   background-image: url("https://cdn.jsdelivr.net/gh/eshook/conv-curriculum@main/footer.png"); 
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+*/
 
 
+.reveal::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* As requested */
+  
+  /* Standard Rainbow Gradient */
+  background: linear-gradient(
+    to right, 
+    #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff
+  );
+  
+  /* Optional: Add a slight transparency so it's not too jarring */
+  opacity: 0.8; 
+  
+  z-index: 9999;
+  pointer-events: none;
+}
