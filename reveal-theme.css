@@ -89,6 +89,8 @@
   position: fixed;
   bottom: 20px;    /* Distance from bottom */
   right: 0px;     /* Distance from right */
+  width: 3300px;  /* Adjust to your logo's width */
+  height: 107px;  /* Adjust to your logo's height */
   z-index: 10;    /* Ensures it stays on top of slide content */
   width: auto;
   pointer-events: none; /* Allows you to click "through" the logo if it covers a link */
