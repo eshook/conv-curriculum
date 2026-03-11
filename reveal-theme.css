@@ -91,7 +91,7 @@
   z-index: 10;    /* Ensures it stays on top of slide content */
   width: auto;
   pointer-events: none; /* Allows you to click "through" the logo if it covers a link */
-  background-image: url("https://cdn.rawgit.com/eshook/conv-curriculum/refs/heads/main/img/footer.png"); 
+  background-image: url("https://cdn.rawgit.com/eshook/conv-curriculum/refs/heads/main/footer.png"); 
   background-size: contain;
   background-repeat: no-repeat;
 }
