@@ -89,24 +89,7 @@
   left: 20px;
   font-size: 14px;
   opacity: 0.7;
-  z-index: 30;
+  z-index: 1000;
   pointer-events: none;
-  background: linear-gradient(
-    to right, 
-    #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff
-  );
   
-}
-
-/* move slide numbers slightly right */
-.reveal .slide-number {
-  bottom: 14px;
-  right: 20px;
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-/* keep progress bar below footer */
-.reveal .progress {
-  height: 3px;
 }
