@@ -83,13 +83,22 @@
   color: #888;
 }
 
+
 .convfooter {
-  position: fixed;
-  bottom: 14px;
-  left: 20px;
-  font-size: 14px;
-  opacity: 0.7;
-  z-index: 1000;
-  pointer-events: none;
-  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;       /* Spans the whole screen */
+    height: 100px;     /* Your requested height */
+    
+    /* The Rainbow Gradient */
+    background: linear-gradient(
+        to right, 
+        #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff
+    );
+
+    opacity: 0.7;
+    z-index: 1000;      /* Keeps it above the slides */
+    pointer-events: none;
+    display: block;     /* Ensures it renders as a box */
 }
