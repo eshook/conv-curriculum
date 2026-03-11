@@ -91,7 +91,7 @@
   right: 20px;           /* Added a small margin from the right edge */
   
   /* Give the element a specific size so the background image can fill it */
-  width: 3300px;
+  width: 300px;
   height: 100px;         
   
   display: block;
